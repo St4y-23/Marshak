@@ -1,0 +1,765 @@
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="animsition-overlay" data-animsition-overlay="true">
+		<div class="content">
+
+			<!-- Cursor -->
+			<div class="cursor">
+				<span class="cursor-circle"></span>
+				<span class="cursor-slider"></span>
+				<span class="cursor-close cursor-label">Close</span>
+				<span class="cursor-zoom cursor-label">Zoom</span>
+			</div>
+
+			<!-- Sprites -->
+			@@include('./blocks/_sprites.html')
+
+			<!-- Header -->
+			@@include('./blocks/_header.html')
+
+			<!-- Menu -->
+			<div class="nav">
+				<div class="nav__content">
+					<ul class="nav__list">
+						<li class="nav__list-item"><a href="index.html" class="hover-target animsition-link">Главная</a></li>
+						<li class="nav__list-item"><a href="about.html" class="hover-target animsition-link">О нас</a></li>
+						<li class="nav__list-item active-nav"><a href="services.html"
+								class="hover-target animsition-link">Услуги</a></li>
+						<li class="nav__list-item"><a href="works.html" class="hover-target animsition-link">Наши работы</a></li>
+						<li class="nav__list-item"><a href="contacts.html" class="hover-target animsition-link">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Grid -->
+			<div class="grid">
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+			</div>
+
+
+			<!-- Services -->
+			<section class="services">
+
+				<div class="services__bgText bgText--about bgText--pages bgText">
+					<span>Услуги.</span>
+				</div>
+
+				<div class="services__wrapper">
+
+					<div class="services__box box__pages">
+						<h1 class="services__title title">Наши услуги<span>.</span></h1>
+						<p class="services__text text">We’ve created a unique visual system and strategy across the wide existing
+							spectrum of visible mobile applications and found yourself...</p>
+					</div>
+
+					<div class="services__inner">
+
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-1" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/color/color_01.webp" type="image/webp">
+										<img src="img/services/color/color_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Цифровая печать</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-2" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/offset/offset_01.webp" type="image/webp">
+										<img src="img/services/offset/offset_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Офсетная печать</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-3" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/black/black_01.webp" type="image/webp">
+										<img src="img/services/black/black_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Черно-белая печать</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-4" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/uv/uv_01.webp" type="image/webp">
+										<img src="img/services/uv/uv_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Печать на УФ-принтере</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-5" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/plotter/plotter_01.webp" type="image/webp">
+										<img src="img/services/plotter/plotter_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Плоттерная резка</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-6" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/books/books_01.webp" type="image/webp">
+										<img src="img/services/books/books_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Переплет</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-7" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/emboss/emboss_01.webp" type="image/webp">
+										<img src="img/services/emboss/emboss_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Тиснение</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-8" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/design/design_01.webp" type="image/webp">
+										<img src="img/services/design/design_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Дизайн</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+						<div class="services__col">
+							<a class="services__item popup-with-zoom-anim js-tilt" href="#services-9" data-tilt>
+
+								<div class="ourServices__image">
+									<div class="services__rect rect"></div>
+									<picture>
+										<source srcset="img/services/prod/prod_01.webp" type="image/webp">
+										<img src="img/services/prod/prod_01.jpg" alt="">
+									</picture>
+								</div>
+
+								<div class="services__item-box">
+									<div class="services__item-title-box">
+										<div class="services__item-title">Сувенирная продукция</div>
+									</div>
+									<div class="services__item-text-box">
+										<div class="services__item-text">Design</div>
+									</div>
+								</div>
+
+							</a>
+						</div>
+
+
+					</div>
+
+
+					<!-- Popup -->
+
+					<!-- Services 1 -->
+					<div id="services-1" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/color/color_02.webp" type="image/webp">
+											<img src="img/services/color/color_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/color/color_03.webp" type="image/webp">
+											<img src="img/services/color/color_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/color/color_04.webp" type="image/webp">
+											<img src="img/services/color/color_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Цифровая печать<span>.</span></h6>
+							<p class="services__popup-text text">Большая часть заказов выполняется на цифровом Xerox J75. Качество,
+								четкость изображений, отсутствие лишнего глянца, скорость, хорошая работа с мелованной бумагой и
+								картоном, другими материалами, делают J75 оптимальной заменой офсетной печати на средних и малых
+								тиражах.</p>
+						</div>
+
+					</div>
+
+					<!-- Services 2 -->
+					<div id="services-2" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/offset/offset_02.webp" type="image/webp">
+											<img src="img/services/offset/offset_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/offset/offset_03.webp" type="image/webp">
+											<img src="img/services/offset/offset_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/offset/offset_04.webp" type="image/webp">
+											<img src="img/services/offset/offset_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Офсетная печать<span>.</span></h6>
+							<p class="services__popup-text text">Большие тиражи печатаем на четырехкрасочной машине форматом А3+
+								(505х350 мм) как на офсетной, так и на мелованной бумаге и картоне различных плотностей. Все
+								постпечатные процессы автоматизированы и позволяют оперативно изготовить изделия с фальцем (одним или
+								несколькими), а также многостраничные издания - брошюры, журналы, книги.</p>
+						</div>
+
+					</div>
+
+					<!-- Services 3 -->
+					<div id="services-3" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/black/black_02.webp" type="image/webp">
+											<img src="img/services/black/black_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/black/black_03.webp" type="image/webp">
+											<img src="img/services/black/black_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/black/black_04.webp" type="image/webp">
+											<img src="img/services/black/black_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Черно-белая печать<span>.</span></h6>
+							<p class="services__popup-text text">Черно-белую печатную продукцию на офсетной бумаге мы изготавливаем на
+								Xerox WorkCentre Pro 4110 с растровым процессором Fiery EXP 4110.</p>
+							<p class="services__popup-text text">Многостраничные буклеты и книги печатаются в течение нескольких часов
+								тиражами по 100-300 экземпляров. Скорость печати - 110 отпечатков А4 в минуту. Внешний контроллер
+								позволяет получать хорошие отпечатки. Одна из важных возможностей принтера - персонификация больших
+								тиражей. Это нумерация билетов и абонементов, печать имен и адресов на конвертах, открытках, грамотах.
+							</p>
+						</div>
+
+					</div>
+
+					<!-- Services 4 -->
+					<div id="services-4" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/uv/uv_02.webp" type="image/webp">
+											<img src="img/services/uv/uv_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/uv/uv_03.webp" type="image/webp">
+											<img src="img/services/uv/uv_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/uv/uv_04.webp" type="image/webp">
+											<img src="img/services/uv/uv_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Печать на УФ-принтере<span>.</span></h6>
+							<p class="services__popup-text text">Качество УФ-печати сразу производит впечатление. Такую продукцию
+								хочется подержать в руках, даже погладить. Изображение выпуклое, гладкое, возможна лакировка матовым или
+								глянцевым лаком. Наличие белой краски дает нам возможность печатать на любой темной поверхности, и
+								рисунок будет ярким. Нанести изображение можно на любую ровную поверхность не более А3 формата и
+								толщиной до 5 см. Этим способом производится нанесение логотипов на ручки, флешки, зажигалки, внешние
+								накопители, также на удостоверения, папки, альбомы. Можно напечатать любимое фото на чехле для телефона.
+							</p>
+						</div>
+
+					</div>
+
+					<!-- Services 5 -->
+					<div id="services-5" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/plotter/plotter_02.webp" type="image/webp">
+											<img src="img/services/plotter/plotter_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/plotter/plotter_03.webp" type="image/webp">
+											<img src="img/services/plotter/plotter_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/plotter/plotter_04.webp" type="image/webp">
+											<img src="img/services/plotter/plotter_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Плоттерная резка<span>.</span></h6>
+							<p class="services__popup-text text">Планшетный режущий плоттер позволяет вырезать открытки, магниты,
+								коробочки и прочие изделия сложной формы. На плоттере Mimaki мы делаем высечку наклеек, при этом
+								надрезается только верхний (клеящий) слой самоклейки, оставляя нетронутым нижнюю подложку. Это очень
+								удобно при изготовлении мелких наклеек.</p>
+						</div>
+
+					</div>
+
+					<!-- Services 6 -->
+					<div id="services-6" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/books/books_02.webp" type="image/webp">
+											<img src="img/services/books/books_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/books/books_03.webp" type="image/webp">
+											<img src="img/services/books/books_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/books/books_04.webp" type="image/webp">
+											<img src="img/services/books/books_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Переплет<span>.</span></h6>
+							<p class="services__popup-text text">Именно переплет придает продукции законченный вид. У нас можно
+								сделать КБС (клеевое бесшовное скрепление), сборку брошюр и буклетов на металлическую пружину, скрепку,
+								металлические болты или кольца. Также делаем твердый переплет (книги, альбомы). Папки для почетных
+								грамот, удостоверения, дипломы – в твердой корочке и с «подушкой», с тиснением «золотом» или «серебром»
+								- изготавливаем из бумвинила, кожзама, а для особых случаев - из натуральной кожи.</p>
+						</div>
+
+					</div>
+
+					<!-- Services 7 -->
+					<div id="services-7" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/emboss/emboss_02.webp" type="image/webp">
+											<img src="img/services/emboss/emboss_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/emboss/emboss_03.webp" type="image/webp">
+											<img src="img/services/emboss/emboss_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Тиснение<span>.</span></h6>
+							<p class="services__popup-text text">Особенно популярная в предновогоднее время услуга - блинтование и
+								тиснение ежедневников и планингов для подарков. Оттиск «золотой» или «серебряной» фольгой украсит также
+								грамоты и открытки.</p>
+						</div>
+
+					</div>
+
+					<!-- Services 8 -->
+					<div id="services-8" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/design/design_02.webp" type="image/webp">
+											<img src="img/services/design/design_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/design/design_03.webp" type="image/webp">
+											<img src="img/services/design/design_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/design/design_04.webp" type="image/webp">
+											<img src="img/services/design/design_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Дизайн<span>.</span></h6>
+							<p class="services__popup-text text">Если у вас нет макета – не страшно. Мы придумаем для вас дизайн любой
+								продукции: визитки, календаря, билета, грамоты, афиши. К выпуску ребенка из детского сада или начальной
+								школы сейчас модно делать фотокниги. Особой популярностью горожан пользуются свадебные приглашения.</p>
+						</div>
+
+					</div>
+
+					<!-- Services 9 -->
+					<div id="services-9" class="services__popup zoom-anim-dialog mfp-hide">
+
+						<div class="services__popup-slider swiper-container slider">
+							<div class="services__popup-wrapper swiper-wrapper">
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/prod/prod_02.webp" type="image/webp">
+											<img src="img/services/prod/prod_02.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/prod/prod_03.webp" type="image/webp">
+											<img src="img/services/prod/prod_03.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+								<div class="services__popup-slide swiper-slide">
+									<div class="services__popup-image">
+										<picture>
+											<source srcset="img/services/prod/prod_04.webp" type="image/webp">
+											<img src="img/services/prod/prod_04.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="services__popup-pagination swiper-pagination"></div>
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+
+						</div>
+
+						<div class="services__popup-box">
+							<div class="services__popup-suptitle">Services popup</div>
+							<h6 class="services__popup-title">Сувенирная продукция<span>.</span></h6>
+							<p class="services__popup-text text">Стремительно возрастает популярность такого вида промосувениров, как
+								значки. Для изготовления значков наша типография использует пресс с круглыми заготовками диаметром 25,
+								37 и 44 мм. Магниты, блокноты, беджи – абсолютно необходимые аксессуары при проведении различных
+								мероприятий..</p>
+						</div>
+
+					</div>
+
+
+				</div>
+			</section>
+
+
+			<!-- Footer -->
+			@@include('./blocks/_footer.html')
+
+			<!-- Scripts -->
+			<script src="js/libs.min.js"></script>
+			@@include('./blocks/_scripts.html')
+			<script src="js/main.min.js"></script>
+		</div>
+	</div>
+</body>
+
+</html>

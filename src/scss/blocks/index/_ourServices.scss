@@ -1,0 +1,160 @@
+.ourServices{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.ourServices__slider{
+  width: 100%;
+  height: 100%;
+}
+
+.ourServices__inner{
+  width: 100%;
+  height: 100%;
+}
+
+.ourServices__item{
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+  &:hover{
+    .rect{
+      background-color: rgba($black, 0.2);
+    }
+    .ourServices__image{
+      img{
+        transform: scale(1.05);
+      }
+    }
+    svg.pulse-svg{
+      opacity: 1;
+    }
+    .ourServices__zoom {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.ourServices__item-hide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: $bg;
+  z-index: 5;
+}
+
+.ourServices__item-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ourServices__image{
+  position: absolute;
+  @include center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: linear .5s;
+  }
+}
+
+.ourServices__zoom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: linear .3s;
+}
+
+.ourServices__box{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 2;
+  font-size: 1.9rem;
+  padding: 4rem 0rem;
+  text-align: center;
+}
+
+.ourServices__num{
+  color: $red;
+  font-size: 2.5rem;
+}
+
+.ourServices__name{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
+.pulse{
+  z-index: -1;
+  position: absolute;
+  @include center;
+}
+
+svg.pulse-svg {
+  overflow: visible;
+  border-radius: 50%;
+  opacity: 0;
+  transition: linear .3s;
+  
+  .circle{
+    fill: transparent;
+    transform: scale(0.5);
+    transform-origin: center center;
+    animation: pulse-me 4s linear infinite;
+  }
+  .second-circle {
+    animation-delay: 2s;
+  }
+  .third-circle {
+    animation-delay: 3s;
+  }
+
+}
+
+
+@keyframes pulse-me {
+  0% {
+    fill: $black;
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    fill: $black;
+    opacity: 0.2;
+  }
+  70% {
+    fill: $black;
+    opacity: 0.19;
+  }
+  100% {
+    fill: $black;
+    transform: scale(5);
+    opacity: 0;
+  }
+}

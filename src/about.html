@@ -1,0 +1,802 @@
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="animsition-overlay" data-animsition-overlay="true">
+		<div class="content">
+
+			<!-- Cursor -->
+			<div class="cursor">
+				<span class="cursor-circle"></span>
+				<span class="cursor-slider"></span>
+				<span class="cursor-close cursor-label">Close</span>
+				<span class="cursor-zoom cursor-label">Zoom</span>
+			</div>
+
+
+			<!-- Sprites -->
+			@@include('./blocks/_sprites.html')
+
+			<!-- Header -->
+			@@include('./blocks/_header.html')
+
+			<!-- Menu -->
+			<div class="nav">
+				<div class="nav__content">
+					<ul class="nav__list">
+						<li class="nav__list-item"><a href="index.html" class="hover-target animsition-link">Главная</a></li>
+						<li class="nav__list-item active-nav"><a href="about.html" class="hover-target animsition-link">О нас</a></li>
+						<li class="nav__list-item"><a href="services.html" class="hover-target animsition-link">Услуги</a></li>
+						<li class="nav__list-item"><a href="works.html" class="hover-target animsition-link">Наши работы</a></li>
+						<li class="nav__list-item"><a href="contacts.html" class="hover-target animsition-link">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Grid -->
+			<div class="grid">
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+			</div>
+
+
+			<!-- About -->
+			<section class="about sectionPage">
+
+				<div class="about__bgImage">
+					<div class="about__rect rect"></div>
+					<picture>
+						<source srcset="img/about_02.webp" type="image/webp">
+						<img src="img/about_02.jpg" alt="">
+					</picture>
+				</div>
+
+				<div class="about__box">
+					<h1 class="about__box-title title">Добро пожаловать в <span>МарШак.</span></h1>
+
+					<p class="about__text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия. Таким образом рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.</p>
+					<div class="about__btn-box"><a class="about__btn btn" href="#aboutInfo">Наши контакты <span></span></a></div>
+				</div>
+
+			</section>
+
+
+			<!-- About Information -->
+			<section class="aboutInfo sectionPage" id="aboutInfo">
+
+				<div class="aboutInfo__inner">
+
+					<div class="aboutInfo__image">
+						<div class="blackHide"></div>
+						<picture>
+							<source srcset="img/cat.webp" type="image/webp">
+							<img src="img/cat.jpg" alt="">
+						</picture>
+					</div>
+
+					<div class="aboutInfo__box">
+
+						<div class="aboutInfo__bgText bgText bgText--about">
+							<span>О Нас.</span>
+						</div>
+
+						<div class="aboutInfo__box-suptitle suptitle">О нас.</div>
+						<h3 class="aboutInfo__title title">Мы приносим <span>качество</span> для вас</h3>
+						<p class="aboutInfo__box-text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия. Таким образом рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.
+							<br>
+							Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют от нас анализа новых предложений. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает создание соответствующий условий активизации. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия.
+						</p>
+
+						<div class="aboutInfo__contacts">
+
+							<div class="aboutInfo__contacts-box">
+
+								<div class="aboutInfo__contacts-icon">
+									<svg class="aboutInfo__icon">
+										<use xlink:href="#phone"></use>
+									</svg>
+								</div>
+
+								<div class="aboutInfo__contacts-info">
+									<div class="aboutInfo__contacts-title">Наши контакты</div>
+									<a class="aboutInfo__contacts-text" href="tel:+73412511319">+7 (3412) 511-319</a>
+									<br>
+									<a class="aboutInfo__contacts-text" href="tel:+73412780600">+7 (3412) 780-600</a>
+								</div>
+							</div>
+
+							<div class="aboutInfo__contacts-box">
+
+								<div class="aboutInfo__contacts-icon">
+									<svg class="aboutInfo__icon">
+										<use xlink:href="#email"></use>
+									</svg>
+								</div>
+
+								<div class="aboutInfo__contacts-info">
+									<div class="aboutInfo__contacts-title">Наш Email</div>
+									<a class="aboutInfo__contacts-text" href="mailto:mar-shak@mail.ru" target="_blank">mar-shak@mail.ru</a>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- About Services -->
+			<section class="aboutServices sectionPage">
+
+				<div class="aboutServices__bgText bgText bgText--about">
+					<span>Наши услуги.</span>
+				</div>
+
+				<div class="aboutServices__box">
+					<div class="aboutServices__suptitle suptitle suptitle--center">Наши услуги</div>
+					<h3 class="aboutServices__title title">Наши лучшие <span>Услуги.</span></h3>
+				</div>
+
+				<div class="aboutServices__items">
+
+					<!-- aboutServices__item 1 -->
+					<div class="aboutServices__item">
+
+						<div class="aboutServices__image">
+							<picture>
+								<source srcset="img/services/color/color_03.webp" type="image/webp">
+								<img src="img/services/color/color_03.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="aboutServices__item-inner">
+
+							<div class="aboutServices__wrapper">
+
+								<div class="aboutServices__logo">
+									<svg class="aboutServices__icon">
+										<use xlink:href="#phone"></use>
+									</svg>
+								</div>
+
+								<div class="aboutServices__name">Цветная печать</div>
+							</div>
+
+							<div class="aboutServices__text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+
+							<a class="aboutServices__link" href="#">
+								Read more
+								<span>
+									<svg class="aboutServices__link-icon">
+										<use xlink:href="#arrow"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+
+					</div>
+
+					<!-- aboutServices__item 2 -->
+					<div class="aboutServices__item">
+
+						<div class="aboutServices__image">
+							<picture>
+								<source srcset="img/services/uv/uv_02.webp" type="image/webp">
+								<img src="img/services/uv/uv_02.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="aboutServices__item-inner">
+
+							<div class="aboutServices__wrapper">
+
+								<div class="aboutServices__logo">
+									<svg class="aboutServices__icon">
+										<use xlink:href="#phone"></use>
+									</svg>
+								</div>
+
+								<div class="aboutServices__name">Печать на УФ-принтере</div>
+							</div>
+
+							<div class="aboutServices__text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+
+							<a class="aboutServices__link" href="#">
+								Read more
+								<span>
+									<svg class="aboutServices__link-icon">
+										<use xlink:href="#arrow"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+
+					</div>
+
+					<!-- aboutServices__item 3 -->
+					<div class="aboutServices__item">
+
+						<div class="aboutServices__image">
+							<picture>
+								<source srcset="img/services/books/books_03.webp" type="image/webp">
+								<img src="img/services/books/books_03.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="aboutServices__item-inner">
+
+							<div class="aboutServices__wrapper">
+
+								<div class="aboutServices__logo">
+									<svg class="aboutServices__icon">
+										<use xlink:href="#phone"></use>
+									</svg>
+								</div>
+
+								<div class="aboutServices__name">Переплет</div>
+							</div>
+
+							<div class="aboutServices__text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+
+							<a class="aboutServices__link" href="#">
+								Read more
+								<span>
+									<svg class="aboutServices__link-icon">
+										<use xlink:href="#arrow"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- How we work -->
+			<section class="howWeWork sectionPage">
+
+				<div class="howWeWork__bgText bgText bgText--about">
+					<span>Как мы работаем.</span>
+				</div>
+
+				<div class="howWeWork__box">
+					<div class="howWeWork__suptitle suptitle suptitle--center">Отличная работа</div>
+					<h3 class="howWeWork__title title">Как мы <span>Работаем.</span></h3>
+					<p class="howWeWork__text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</p>
+				</div>
+
+				<div class="howWeWork__inner">
+
+					<div class="howWeWork__item">
+						<div class="howWeWork__item-logo">
+							<svg class="howWeWork__icon">
+								<use xlink:href="#email"></use>
+							</svg>
+							<div class="howWeWork__item-num">01</div>
+						</div>
+						<div class="howWeWork__item-title">Получение и обсуждение заказа</div>
+						<div class="howWeWork__item-info text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+					</div>
+
+					<div class="howWeWork__item">
+						<div class="howWeWork__item-logo">
+							<svg class="howWeWork__icon">
+								<use xlink:href="#email"></use>
+							</svg>
+							<div class="howWeWork__item-num">02</div>
+						</div>
+						<div class="howWeWork__item-title">Разработка макета</div>
+						<div class="howWeWork__item-info text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+					</div>
+
+					<div class="howWeWork__item">
+						<div class="howWeWork__item-logo">
+							<svg class="howWeWork__icon">
+								<use xlink:href="#email"></use>
+							</svg>
+							<div class="howWeWork__item-num">03</div>
+						</div>
+						<div class="howWeWork__item-title">Изготовление продукции</div>
+						<div class="howWeWork__item-info text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+					</div>
+
+					<div class="howWeWork__item">
+						<div class="howWeWork__item-logo">
+							<svg class="howWeWork__icon">
+								<use xlink:href="#email"></use>
+							</svg>
+							<div class="howWeWork__item-num">04</div>
+						</div>
+						<div class="howWeWork__item-title">Выдача заказа</div>
+						<div class="howWeWork__item-info text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</div>
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- Our Qualities -->
+			<section class="qualities sectionPage">
+				<div class="qualities__inner">
+
+					<div class="qualities__items">
+
+						<div class="qualities__item">
+							<div class="qualities__item-image">
+								<div class="qualities__smoke"></div>
+								<picture>
+									<source class="cover" srcset="img/002.webp" type="image/webp">
+									<img class="cover" src="img/002.jpg" alt="">
+								</picture>
+							</div>
+							<div class="qualities__item-name">2.500 industry experts</div>
+						</div>
+
+						<div class="qualities__item">
+							<div class="qualities__item-image">
+								<div class="qualities__smoke"></div>
+								<picture>
+									<source class="cover" srcset="img/003.webp" type="image/webp">
+									<img class="cover" src="img/003.jpg" alt="">
+								</picture>
+							</div>
+							<div class="qualities__item-name">40 years of experience</div>
+						</div>
+
+						<div class="qualities__item">
+							<div class="qualities__item-image">
+								<div class="qualities__smoke"></div>
+								<picture>
+									<source class="cover" srcset="img/004.webp" type="image/webp">
+									<img class="cover" src="img/004.jpg" alt="">
+								</picture>
+							</div>
+							<div class="qualities__item-name">Skills and experience</div>
+						</div>
+
+						<div class="qualities__item">
+							<div class="qualities__item-image">
+								<div class="qualities__smoke"></div>
+								<picture>
+									<source class="cover" srcset="img/008.webp" type="image/webp">
+									<img class="cover" src="img/008.jpg" alt="">
+								</picture>
+							</div>
+							<div class="qualities__item-name">125 branches worldwide</div>
+						</div>
+
+					</div>
+
+
+					<div class="qualities__info">
+
+						<div class="qualities__bgText bgText bgText--about">
+							<span>Our qualities.</span>
+						</div>
+
+						<div class="qualities__box">
+							<div class="qualities__suptitle suptitle">Our qualities</div>
+							<h3 class="qualities__title title">40 years of <span>experience.</span></h3>
+							<p class="qualities__text text">Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки систем массового участия.</p>
+						</div>
+
+						<div class="qualities__features">
+
+							<div class="qualities__feature">
+								<div class="qualities__feature-logo">
+									<svg class="qualities__icon">
+										<use xlink:href="#pin"></use>
+									</svg>
+								</div>
+								<div class="qualities__feature-title">Experience</div>
+								<div class="qualities__feature-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+							</div>
+
+							<div class="qualities__feature">
+								<div class="qualities__feature-logo">
+									<svg class="qualities__icon">
+										<use xlink:href="#pin"></use>
+									</svg>
+								</div>
+								<div class="qualities__feature-title">Comprehensive</div>
+								<div class="qualities__feature-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+							</div>
+
+							<div class="qualities__feature">
+								<div class="qualities__feature-logo">
+									<svg class="qualities__icon">
+										<use xlink:href="#pin"></use>
+									</svg>
+								</div>
+								<div class="qualities__feature-title">Creative brain</div>
+								<div class="qualities__feature-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Features -->
+			<section class="features sectionPage">
+
+				<div class="features__bgText bgText bgText--about">
+					<span>Our features.</span>
+				</div>
+
+				<div class="features__box">
+					<div class="features__suptitle suptitle suptitle--center">Our features</div>
+					<h3 class="features__title title">A perfect business <span>solution.</span></h3>
+				</div>
+
+				<div class="features__inner">
+
+					<div class="features__item">
+						<div class="features__item-num">384</div>
+						<div class="features__item-text">Offices around the world</div>
+					</div>
+
+					<div class="features__item">
+						<div class="features__item-num">384</div>
+						<div class="features__item-text">Offices around the world</div>
+					</div>
+
+					<div class="features__item">
+						<div class="features__item-num">384</div>
+						<div class="features__item-text">Offices around the world</div>
+					</div>
+
+					<div class="features__item">
+						<div class="features__item-num">384</div>
+						<div class="features__item-text">Offices around the world</div>
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- Testimonials -->
+			<section class="testimonials sectionPage">
+
+				<div class="testimonials__bgImage">
+					<div class="testimonials__rect rect"></div>
+					<picture>
+						<source class="cover" srcset="img/testi.webp" type="image/webp">
+						<img class="cover" src="img/testi.jpg" alt="">
+					</picture>
+				</div>
+
+				<div class="testimonials__inner">
+
+					<div class="testimonials__box">
+						<div class="testimonials__item-suptitle suptitle">Что клиенты говорят о нас</div>
+						<h3 class="testimonials__item-title title">Нам доверяют самые известные <span>Компании.</span></h3>
+						<div class="testimonials__item-icon">
+							<svg class="testimonials__icon">
+								<use xlink:href="#quote"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="testimonials__slider swiper-container">
+
+						<div class="testimonials__wrapper swiper-wrapper">
+
+							<div class="testimonials__item swiper-slide">
+								<div class="testimonials__item-title title">«Удмуртэнерго» ПАО «МРСК Центра и Приволжья»</div>
+								<p class="testimonials__item-text text">«Мы сотрудничаем с типографией «МарШак» на протяжении нескольких лет. Нравится то, что печать действительно оперативная, при этом не допускается никаких компромиссов с качеством. Быстро, качественно, оригинально – это про них. Приятно и то, что работа с «маршаками» никогда не ограничивается жесткими рамками техзадания. Если есть возможность выполнить заказ лучше, качественнее и даже дешевле – будьте уверены, «маршаки» вам подскажут.»</p>
+								<div class="testimonials__item-name">Михаил Кротиков</div>
+								<div class="testimonials__item-company">Начальник пресс-службы филиала «Удмуртэнерго» ПАО «МРСК Центра и Приволжья»</div>
+							</div>
+
+							<div class="testimonials__item swiper-slide">
+								<div class="testimonials__item-title title">Удмуртский филиал ОАО «ЭнергосбыТ Плюс»</div>
+								<p class="testimonials__item-text text">«Типография «МарШак» отличается персонализированным подходом к клиенту. Стараются найти общие точки соприкосновения не только в части клиентских отношений, но и на уровне межличностных отношений. В результате – более глубокое понимание целей и задач клиента и формирование предложения наиболее полно отвечающим клиентским ожиданиям. Пропагандируя честность и открытость в отношениях с клиентами, компания сразу предупреждает какие производственные процессы недоступны на существующем оборудовании, где будут выполнены эти процессы, при этом она берёт на себя полноту ответственности за конечный результат. Качество, честность, открытость, доброжелательность – основные критерии работы типографии «МарШак».»
+								</p>
+								<div class="testimonials__item-name">Нил Миназитдинов</div>
+								<div class="testimonials__item-company">Руководитель пресс-службы Удмуртский филиал ОАО «ЭнергосбыТ Плюс»</div>
+							</div>
+
+							<div class="testimonials__item swiper-slide">
+								<div class="testimonials__item-title title">Выставочный центр «УДМУРТИЯ»</div>
+								<p class="testimonials__item-text text">«Совместной работе Выставочного центра «УДМУРТИЯ» и типографии «МарШак» уже более 10 лет. За это время ваша компания стала нашим надежным партнером, готовым профессионально решать поставленные задачи. Мы ценим вашу оперативность в работе, индивидуальный подход и качество полиграфических услуг. Желаем вам дальнейшего развития и процветания!»</p>
+								<div class="testimonials__item-name">Евгения Трофимова</div>
+								<div class="testimonials__item-company">Исполнительный директор Выставочного центра «УДМУРТИЯ»</div>
+							</div>
+
+							<div class="testimonials__item swiper-slide">
+								<div class="testimonials__item-title title">Союз «Чернобыль» Удмуртской Республики</div>
+								<p class="testimonials__item-text text">«Все познается в сравнении. Союз «Чернобыль» Удмуртской Республики по роду своей деятельности часто обращается к услугам типографий для печати буклетов, книг, сборников, грамот и т.д.»</p>
+								<p class="testimonials__item-text text">«И, когда более пяти лет назад, мы впервые обратились в  типографию «МарШак», то не ошиблись и выбор  был правильный. С этого периода мы работаем только с типографией  «МарШак». Всегда продукция отличного качества, изготавливается всегда оперативно и цены приемлемые. Многое делается дистанционно, в том числе и согласование макетов, что также очень удобно. Особо хотелось бы отметить коллектив типографии,  начиная с руководителя, дизайнера, менеджера и заканчивая бухгалтером, за их профессионализм, индивидуальный подход и очень теплое отношение к заказчикам, что очень приятно.. Спасибо за хорошую работу.»</p>
+								<div class="testimonials__item-name">Сармакеев Семен Петрович</div>
+								<div class="testimonials__item-company">Председатель Союз «Чернобыль» Удмуртской Республики</div>
+							</div>
+
+						</div>
+
+						<!-- Pagination -->
+						<div class="testimonials-pagination swiper-pagination"></div>
+
+						<div class="swiper-button-next testimonials-button-next"></div>
+						<div class="swiper-button-prev testimonials-button-prev"></div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Partners -->
+			<section class="partners sectionPage">
+				<div class="partners__items">
+
+					<div class="partners__item">
+						<picture>
+							<source class="img" srcset="img/logo/logo_1.webp" type="image/webp">
+							<img class="img" src="img/logo/logo_1.png" alt="">
+						</picture>
+					</div>
+
+					<div class="partners__item">
+						<picture>
+							<source class="img" srcset="img/logo/logo_2.webp" type="image/webp">
+							<img class="img" src="img/logo/logo_2.png" alt="">
+						</picture>
+					</div>
+
+					<div class="partners__item">
+						<picture>
+							<source class="img" srcset="img/logo/logo_3.webp" type="image/webp">
+							<img class="img" src="img/logo/logo_3.png" alt="">
+						</picture>
+					</div>
+
+					<div class="partners__item">
+						<picture>
+							<source class="img" srcset="img/logo/logo_4.webp" type="image/webp">
+							<img class="img" src="img/logo/logo_4.png" alt="">
+						</picture>
+					</div>
+
+					<div class="partners__item">
+						<picture>
+							<source class="img" srcset="img/logo/logo_5.webp" type="image/webp">
+							<img class="img" src="img/logo/logo_5.png" alt="">
+						</picture>
+					</div>
+
+					<div class="partners__item">
+						<picture>
+							<source class="img" srcset="img/logo/logo_6.webp" type="image/webp">
+							<img class="img" src="img/logo/logo_6.png" alt="">
+						</picture>
+					</div>
+
+				</div>
+			</section>
+
+
+			<!-- Team -->
+			<section class="team sectionPage">
+
+				<div class="team__bgText bgText bgText--about">
+					<span>Our Team.</span>
+				</div>
+
+				<div class="team__box">
+					<div class="team__suptitle suptitle suptitle--center">Our best team</div>
+					<h3 class="team__title title">Our <span>team.</span> </h3>
+				</div>
+
+				<div class="team__slider swiper-container slider">
+					<div class="team__inner swiper-wrapper">
+
+						<div class="team__slide swiper-slide js-tilt" data-tilt>
+
+							<div class="team__slide-image">
+								<div class="blackHide"></div>
+								<div class="rect"></div>
+								<picture>
+									<source srcset="img/team/team_5.webp" type="image/webp">
+									<img src="img/team/team_5.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="team__slide-box">
+								<div class="team__slide-firstName">Eesa</div>
+								<div class="team__slide-lastName">Goodwin</div>
+							</div>
+
+						</div>
+
+						<div class="team__slide swiper-slide js-tilt" data-tilt>
+
+							<div class="team__slide-image">
+								<div class="blackHide"></div>
+								<div class="rect"></div>
+								<picture>
+									<source srcset="img/team/team_2.webp" type="image/webp">
+									<img src="img/team/team_2.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="team__slide-box">
+								<div class="team__slide-firstName">Fletcher</div>
+								<div class="team__slide-lastName">Hinton</div>
+							</div>
+
+						</div>
+
+						<div class="team__slide swiper-slide js-tilt" data-tilt>
+
+							<div class="team__slide-image">
+								<div class="blackHide"></div>
+								<div class="rect"></div>
+								<picture>
+									<source srcset="img/team/team_3.webp" type="image/webp">
+									<img src="img/team/team_3.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="team__slide-box">
+								<div class="team__slide-firstName">Perry</div>
+								<div class="team__slide-lastName">Case</div>
+							</div>
+
+						</div>
+
+						<div class="team__slide swiper-slide js-tilt" data-tilt>
+
+							<div class="team__slide-image">
+								<div class="blackHide"></div>
+								<div class="rect"></div>
+								<picture>
+									<source srcset="img/team/team_4.webp" type="image/webp">
+									<img src="img/team/team_4.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="team__slide-box">
+								<div class="team__slide-firstName">Matthew</div>
+								<div class="team__slide-lastName">Sherman</div>
+							</div>
+
+						</div>
+
+						<div class="team__slide swiper-slide js-tilt" data-tilt>
+
+							<div class="team__slide-image">
+								<div class="blackHide"></div>
+								<div class="rect"></div>
+								<picture>
+									<source srcset="img/team/team_1.webp" type="image/webp">
+									<img src="img/team/team_1.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="team__slide-box">
+								<div class="team__slide-firstName">Florence</div>
+								<div class="team__slide-lastName">Powell</div>
+							</div>
+
+						</div>
+
+						<div class="team__slide swiper-slide js-tilt" data-tilt>
+
+							<div class="team__slide-image">
+								<div class="blackHide"></div>
+								<div class="rect"></div>
+								<picture>
+									<source srcset="img/team/team_6.webp" type="image/webp">
+									<img src="img/team/team_6.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="team__slide-box">
+								<div class="team__slide-firstName">Willis</div>
+								<div class="team__slide-lastName">Calvert</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="swiper-button-next team-button-next"></div>
+					<div class="swiper-button-prev team-button-prev"></div>
+
+				</div>
+
+			</section>
+
+
+			<!-- Contacts -->
+			<section class="contacts sectionPage">
+
+				<div class="contacts__box">
+
+					<div class="contacts__bgText bgText bgText--about">
+						<span>Контакты.</span>
+					</div>
+
+					<h3 class="contacts__title title">Контакты<span>.</span></h3>
+					<p class="contacts__text text">We’ve created a unique visual system and strategy across the wide existing
+						spectrum of visible mobile applications and found yourself...</p>
+
+				</div>
+
+				<div class="contacts__inner">
+
+					<div class="contacts__map">
+						<div class="blackHide"></div>
+						<div class="ourContacts__map-frame">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d545.5522124317365!2d53.20466802929935!3d56.84236139880367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e1393653575ccf%3A0xd55c4438d97961ee!2z0JzQsNGA0KjQsNC6LA!5e0!3m2!1sru!2sru!4v1610966245586!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
+					</div>
+
+					<div class="contacts__items">
+
+						<div class="contacts__item">
+							<div class="contacts__item-icon">
+								<svg class="ourContacts__icon">
+									<use xlink:href="#pin"></use>
+								</svg>
+							</div>
+							<div class="contacts__item-title">Адрес:</div>
+							<div class="contacts__item-text">Ул. Пастухова, д. 13</div>
+						</div>
+
+						<div class="contacts__item">
+							<div class="contacts__item-icon">
+								<svg class="ourContacts__icon">
+									<use xlink:href="#phone"></use>
+								</svg>
+							</div>
+							<div class="contacts__item-title">Телефоны:</div>
+							<a class="contacts__item-number" href="tel:+73412511319">+7 (3412) 511-319</a>
+							<a class="contacts__item-number" href="tel:+73412780600">+7 (3412) 780-600</a>
+						</div>
+
+						<div class="contacts__item">
+							<div class="contacts__item-icon">
+								<svg class="ourContacts__icon">
+									<use xlink:href="#email"></use>
+								</svg>
+							</div>
+							<div class="contacts__item-title">Email адрес:</div>
+							<a class="contacts__item-email" href="mailto:mar-shak@mail.ru" target="_blank">mar-shak@mail.ru</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- Footer -->
+			@@include('./blocks/_footer.html')
+
+			<!-- Scripts -->
+			<script src="js/libs.min.js"></script>
+			@@include('./blocks/_scripts.html')
+			<script src="js/main.min.js"></script>
+		</div>
+	</div>
+</body>
+
+</html>

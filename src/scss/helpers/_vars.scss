@@ -1,0 +1,48 @@
+// $text: #a9afc3;
+$red: #b31c21;
+$yellow: #ffcb05;
+$blue: #008cd1;
+$black: #000;
+$bg: #121212;
+$dark: #181818;
+$light: #fff;
+$grey: rgba(#fff, 0.7);
+$light_grey: #585c6a;
+$light_grey2: #eee;
+
+@function rem($px) {
+  @return ($px / 16) + rem;
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin supCenter {
+  padding: 0;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: $red;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    right: -37px;
+    background-color: $red;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

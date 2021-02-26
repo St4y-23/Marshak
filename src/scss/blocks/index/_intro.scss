@@ -1,0 +1,236 @@
+.intro{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.no-webp .intro {
+  background-image: url(../img/intro.jpg);
+}
+
+.intro__rect{
+  z-index: 1;
+}
+
+.intro__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.intro__box{
+  position: relative;
+}
+
+.intro__title{
+  position: relative;
+  z-index: 2;
+}
+
+.intro__title-hide{
+  opacity: 0;
+  font-size: 0;
+}
+
+#logo{
+  height: 300px;
+}
+
+
+.intro__title.active #logo {
+
+  // М
+  .path_1 {
+    stroke-dashoffset: 228;
+    stroke-dasharray: 228;
+    animation: line-anim 1.5s ease forwards 0.8s;
+  }
+  .path_7 {
+    stroke-dashoffset: 225;
+    stroke-dasharray: 225;
+    animation: line-anim 1.5s ease forwards 0.8s;
+  }
+
+  // А
+  .path_2 {
+    stroke-dashoffset: 53;
+    stroke-dasharray: 53;
+    animation: line-anim 1.5s ease forwards 1s;
+  }
+  .path_12 {
+    stroke-dashoffset: 55;
+    stroke-dasharray: 55;
+    animation: line-anim 1.5s ease forwards 1s;
+  }
+
+  // Р
+  .path_3 {
+    stroke-dashoffset: 97;
+    stroke-dasharray: 97;
+    animation: line-anim 1.5s ease forwards 1.2s;
+  }
+  .path_11 {
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    animation: line-anim 1.5s ease forwards 1.2s;
+  }
+
+  // Ш
+  .path_4 {
+    stroke-dashoffset: 220;
+    stroke-dasharray: 220;
+    animation: line-anim 1.5s ease forwards 1.4s;
+  }
+  .path_9 {
+    stroke-dashoffset: 216;
+    stroke-dasharray: 216;
+    animation: line-anim 1.5s ease forwards 1.4s;
+  }
+
+  // А
+  .path_6 {
+    stroke-dashoffset: 55;
+    stroke-dasharray: 55;
+    animation: line-anim 1.5s ease forwards 1.6s;
+  }
+  .path_10 {
+    stroke-dashoffset: 56;
+    stroke-dasharray: 56;
+    animation: line-anim 1.5s ease forwards 1.6s;
+  }
+
+  // К
+  .path_5 {
+    stroke-dashoffset: 80;
+    stroke-dasharray: 80;
+    animation: line-anim 1.5s ease forwards 1.8s;
+  }
+  .path_8 {
+    stroke-dashoffset: 79;
+    stroke-dasharray: 79;
+    animation: line-anim 1.5s ease forwards 1.8s;
+  }
+  
+  
+  .pol_1 {
+    stroke-dashoffset: 262;
+    stroke-dasharray: 262;
+    animation: line-anim 1.5s ease forwards 0.8s;
+  }
+  .pol_2 {
+    stroke-dashoffset: 263;
+    stroke-dasharray: 263;
+    animation: line-anim 1.5s ease forwards 1s;
+  }
+
+  .rect_1 {
+    stroke-dashoffset: 262;
+    stroke-dasharray: 262;
+    animation: line-anim 1.5s ease forwards 1.2s;
+  }
+  .rect_2 {
+    stroke-dashoffset: 49;
+    stroke-dasharray: 49;
+    animation: line-anim 1.5s ease forwards 1.4s;
+  }
+  .rect_3 {
+    stroke-dashoffset: 98;
+    stroke-dasharray: 98;
+    animation: line-anim 1.5s ease forwards 1.6s;
+  }
+  .rect_4 {
+    stroke-dashoffset: 128;
+    stroke-dasharray: 128;
+    animation: line-anim 1.5s ease forwards 1.8s;
+  }
+  .rect_5 {
+    stroke-dashoffset: 122;
+    stroke-dasharray: 122;
+    animation: line-anim 1.5s ease forwards 2s;
+  }
+  
+}
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+.intro__subtitle{
+  text-align: right;
+  font-weight: 600;
+  z-index: 2;
+  position: relative;
+  margin-top: -60px;
+}
+
+.intro__btn-box{
+  position: relative;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.intro__arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /* Safari and Chrome */
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {   
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}

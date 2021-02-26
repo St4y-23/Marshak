@@ -1,0 +1,89 @@
+.aboutUs{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.aboutUs__bgText{
+  left: 0;
+}
+
+.aboutUs__wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutUs__inner{
+  display: flex;
+  position: relative;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.aboutUs__box{
+  width: 40%;
+  padding-left: 10%;
+  padding-right: 2%;
+}
+
+.aboutUs__title{
+  margin-bottom: 2rem;
+}
+
+.aboutUs__text{
+  margin-bottom: 1rem;
+  padding-right: 25%;
+}
+
+.aboutUs__btn{
+  margin-top: 1rem;
+}
+
+
+.aboutUs__image{
+  position: relative;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.aboutUs__items{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+}
+
+.aboutUs__item{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs__item-num{
+  color: $red;
+  font-size: 3rem;
+  line-height: 1;
+  margin-right: .5rem;
+}
+
+.aboutUs__item-text{
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+

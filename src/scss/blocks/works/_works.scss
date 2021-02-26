@@ -1,0 +1,158 @@
+.works__wrapper{
+  overflow-x: hidden;
+}
+
+.works__inner{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60vh;
+  margin-bottom: 10%;
+  padding: 0 5%;
+  overflow-x: hidden;
+}
+
+.works__col{
+  width: 33.33333%;
+  height: auto;
+  padding: 0 2rem;
+  overflow-x: hidden;
+}
+
+.works__item{
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  transition: all .3s;
+
+  &:hover{
+
+    .works__image{
+      clip-path: inset(5px 10px);
+      img{
+        clip-path: inset(5px 10px);
+        transform: scale(1.05);
+      }
+    }
+
+    .works__item-text{
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    .works__item-link{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.works__image{
+  overflow: hidden;
+  transition: all .3s;
+  clip-path: inset(0);
+  img{
+    overflow: hidden;
+    transition: all .3s;
+    clip-path: inset(0);
+  }
+}
+
+.works__item-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.works__item-title{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+
+  span{
+    color: $yellow;
+  }
+}
+
+.works__item-text-box{
+  overflow: hidden;
+  position: relative;
+}
+
+.works__item-text,
+.works__item-link{
+  font-size: .8rem;
+  color: $light-grey;
+  transition: all .3s;
+}
+
+.works__item-text{
+  font-style: italic;
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.works__item-link{
+  color: $red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  opacity: 0;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 1px;
+    background-color: $red;
+    top: 50%;
+    left: 150%;
+    transform: translateX(-50%);
+  }
+}
+
+
+// Magnific popup zoom effect
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+// Bottom scroll delete
+.mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
+  right: 0;
+  padding-right: 0;
+}
+
+.mfp-counter{
+  right: 10px;
+
+}

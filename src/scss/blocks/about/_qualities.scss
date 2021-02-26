@@ -1,0 +1,135 @@
+.qualities{
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.qualities__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.qualities__items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+}
+
+.qualities__item{
+  background-color: $dark;
+  width: 46%;
+  height: 18vw;
+  position: relative;
+  margin: 0 2%;
+  padding: 15px;
+  border-radius: 4px;
+  border-bottom: 4px solid $light;
+  transition: linear 0.2s;
+
+  &:hover{
+    box-shadow: 0 0 30px 5px rgba($red, .2);
+    border-color: rgba($red, .5);
+
+    .qualities__item-name{
+      color: $red;
+    }
+  }
+
+
+  &:nth-child(1){
+    margin-top: 40px;
+  }
+  &:nth-child(3){
+    margin-top: 40px;
+  }
+}
+
+.qualities__item-image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.qualities__smoke{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, $dark 15%, transparent 100%);
+}
+
+.qualities__item-name{
+  width: 100%;
+  padding: 0 50px;
+  position: absolute;
+  bottom: 1rem;
+  font-size: .9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  transition: linear 0.2s;
+}
+
+.qualities__info{
+  width: 48%;
+  position: relative;
+}
+
+.qualities__bgText{
+  left: 0;
+  transform: translate(0);
+  span{
+    font-size: 5rem;
+  }
+}
+
+.qualities__box{
+  margin-bottom: 2rem;
+}
+
+.qualities__features{
+  display: flex;
+  margin: 0 -15px;
+}
+
+.qualities__feature{
+  width: 33.33333%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:hover{
+    .qualities__feature-logo{
+      border-color: rgba($red, .7);
+      box-shadow: 0 0 30px 5px rgba($red, .2);
+    }
+    .qualities__icon{
+      fill: rgba($red, .7);
+    }
+    .qualities__feature-title{
+      color: rgba($red, .7);
+    }
+  }
+}
+
+.qualities__feature-logo{
+  width: 110px;
+  height: 110px;
+  background-color: $dark;
+  border: 4px solid $light;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 1rem;
+  transition: linear 0.2s;
+}
+
+.qualities__feature-title{
+  margin-bottom: 0.4rem;
+  transition: linear 0.2s;
+}

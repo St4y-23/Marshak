@@ -1,0 +1,49 @@
+@import "helpers/vars";
+@import "helpers/global";
+@import "helpers/fonts";
+@import "helpers/sprites";
+
+
+// Header
+@import "blocks/header";
+
+
+// Index
+@import "blocks/index/intro";
+@import "blocks/index/aboutUs";
+@import "blocks/index/ourServices";
+@import "blocks/index/portfolio";
+@import "blocks/index/ourContacts";
+
+
+// About
+@import "blocks/about/about";
+@import "blocks/about/aboutInfo";
+@import "blocks/about/aboutServices";
+@import "blocks/about/howWeWork";
+@import "blocks/about/qualities";
+@import "blocks/about/features";
+@import "blocks/about/testimonials";
+@import "blocks/about/partners";
+@import "blocks/about/team";
+
+
+// Services
+@import "blocks/services/services";
+
+
+// Works
+@import "blocks/works/works";
+
+
+// Contacts
+@import "blocks/contacts/contacts";
+
+
+// Footer
+@import "blocks/footer";
+
+
+// Media
+@import "helpers/media";
+

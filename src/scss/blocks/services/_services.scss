@@ -1,0 +1,175 @@
+.services{
+  overflow-x: hidden;
+}
+
+.services__bgText,
+.works__bgText{
+  top: 15vh;
+}
+
+.services__wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.services__inner{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  margin-top: 60vh;
+}
+
+.services__col{
+  width: 33.33333%;
+  height: 32vw;
+  padding: 0 2rem;
+
+  &:nth-child(3n+2){
+    margin-top: 5rem;
+  }
+}
+
+.services__item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+
+  &:hover{
+    box-shadow: 0 0 30px 5px rgba($red, .3);
+    .services__rect{
+      background-color: rgba($black, .2);
+    }
+    .services__item-title,
+    .services__item-text{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.services__rect{
+  background-color: rgba($black, 0);
+  transition: ease-in-out .25s;
+}
+
+.services__item-box{
+  text-align: center;
+  padding: 40px 45px;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  transform: translateZ(70px);
+}
+
+.services__item-title-box,
+.services__item-text-box{
+  overflow: hidden;
+}
+
+.services__item-title{
+  font-size: 1.3rem;
+  margin-bottom: .3rem;
+  transition: ease-in-out .25s;
+  transform: translateY(110%);
+  opacity: 0;
+}
+
+.services__item-text{
+  font-size: 1rem;
+  color: $red;
+  transition: ease-in-out .25s;
+  transform: translateY(110%);
+  opacity: 0;
+}
+
+
+// Popup
+.services__popup{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(27, 27, 27);  
+  position: relative;
+  overflow: hidden;
+}
+
+.services__popup-slider{
+  width: 75%;
+  position: relative;
+  z-index: 2;
+}
+
+.services__popup-image{
+  position: absolute;
+  @include center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: linear .5s;
+  }
+}
+
+
+.services__popup-box{
+  width: 25%;
+  padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(40,40,40)' viewBox='0 0 100 169.5'%3E%3Cpolygon points='50,34.75 93.5,59.75 93.5,109.75 50,134.75 6.5,109.75 6.5,59.75'%3E%3C/polygon%3E%3Cpolygon points='0,-50 43.5,-25 43.5,25 0,50 -43.5,25 -43.5,-25'%3E%3C/polygon%3E%3Cpolygon points='100,-50 143.5,-25 143.5,25 100,50 56.5,25 56.5,-25'%3E%3C/polygon%3E%3Cpolygon points='0,119.5 43.5,144.5 43.5,194.5 0,219.5 -43.5,194.5 -43.5,144.5'%3E%3C/polygon%3E%3Cpolygon points='100,119.5 143.5,144.5 143.5,194.5 100,219.5 56.5,194.5 56.5,144.5'%3E%3C/polygon%3E%3C/svg%3E");
+	background-size: 20px;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: -100px;
+    background-color: #111114;
+    transform: rotate(45deg);
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -100px;
+    background-color: #111114;
+    transform: rotate(45deg);
+  }
+}
+
+.services__popup-suptitle{
+  color: $red;
+}
+
+.services__popup-title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  span{
+    color: $red;
+  }
+}
+
+
+

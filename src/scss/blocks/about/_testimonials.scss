@@ -1,0 +1,68 @@
+.testimonials{
+  position: relative;
+  margin-bottom: 4rem;
+  padding: 5% 0 6% 0;
+}
+
+.testimonials__bgImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.testimonials__rect{
+  background-color: rgba($black, 0.5);
+}
+
+.testimonials__inner{
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials__box{
+  margin-bottom: 1.5rem;
+}
+
+
+.testimonials__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__item-suptitle{
+  font-size: 0.4rem;
+}
+
+.testimonials__item-title{
+  // max-width: 500px;
+  max-width: 60%;
+}
+
+.testimonials__item-icon{
+  margin-top: .5rem;
+}
+
+.testimonials__item-text{
+  margin-bottom: 1.5rem;
+  // max-width: 500px;
+  max-width: 60%;
+  color: $light;
+  font-size: 1rem;
+  font-style: italic;
+  padding-right: 0.5rem;
+}
+
+.testimonials__item-name{
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.testimonials__item-company{
+  font-size: 0.6rem;
+  color: rgba($light, .5);
+}
