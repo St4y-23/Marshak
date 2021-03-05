@@ -51,7 +51,8 @@ body {
   overflow-x: hidden;
   position: relative;
   background: #16161a;
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // Animsition preloader
@@ -141,7 +142,8 @@ body {
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Caveat', cursive;
+  // font-family: 'Caveat', cursive;
+  font-family: 'Playfair Display', serif;
 
   span {
     color: $red;

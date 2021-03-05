@@ -52,7 +52,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background: #16161a;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .animsition-overlay-slide {
@@ -139,7 +139,7 @@ body {
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Caveat', cursive;
+  font-family: 'Playfair Display', serif;
 }
 
 .title span {
@@ -2258,6 +2258,7 @@ svg.pulse-svg .third-circle {
 
 .aboutServices__name {
   transition: linear .2s;
+  font-family: 'Playfair Display', serif;
 }
 
 .aboutServices__text {
